@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personalized NASM OPT online coaching for busy professionals 30-50. Reclaim your movement and rebuild strength with corrective exercise and functional training.">
+    <title>Aven Fitness | Reclaim Your Movement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .hero-bg { background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url('https://picsum.photos/id/1015/2000/1200'); background-size: cover; background-position: center; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white">
+    <!-- Sticky Nav with YOUR real logo -->
+    <nav class="sticky top-0 z-50 bg-zinc-950 border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="logo.png" alt="Aven Fitness Logo" class="h-12 w-auto">
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#" class="hover:text-emerald-400 transition-colors">Home</a>
+                <a href="#" class="hover:text-emerald-400 transition-colors">Coaching</a>
+                <a href="#" class="hover:text-emerald-400 transition-colors">Pricing</a>
+                <a href="#" class="hover:text-emerald-400 transition-colors">About</a>
+                <a href="#" class="hover:text-emerald-400 transition-colors">Contact</a>
+                <a href="#" class="hover:text-emerald-400 transition-colors">Terms</a>
+            </div>
+            <button onclick="document.getElementById('lead-form').scrollIntoView({ behavior: 'smooth' })" 
+                    class="bg-emerald-500 hover:bg-emerald-600 px-6 py-3 rounded-3xl text-sm font-semibold transition-colors">
+                Get Started
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-bg h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-6xl md:text-7xl font-bold leading-none tracking-tighter mb-6">
+                Reclaim Your Movement.<br>Rebuild Your Strength.
+            </h2>
+            <p class="text-2xl md:text-3xl text-zinc-300 max-w-2xl mx-auto mb-10">
+                Personalized NASM OPT online coaching for busy professionals 30–50.<br>
+                Corrective exercise • Functional strength • Real-life results.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button onclick="document.getElementById('lead-form').scrollIntoView({ behavior: 'smooth' })" 
+                        class="bg-white text-zinc-950 px-10 py-5 rounded-3xl text-lg font-semibold hover:bg-emerald-400 transition-colors">
+                    Get Started Today
+                </button>
+                <button onclick="document.getElementById('how-it-works').scrollIntoView({ behavior: 'smooth' })" 
+                        class="border border-white px-10 py-5 rounded-3xl text-lg font-medium hover:bg-white/10 transition-colors">
+                    How Online Training Works
+                </button>
+            </div>
+            <div class="mt-16 flex justify-center gap-8 text-sm opacity-75">
+                <div class="flex items-center gap-2"><i class="fa-solid fa-dumbbell"></i> NASM Certified</div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-clock"></i> 4-Week Results Guarantee</div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-users"></i> 150+ Transformations</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture Form – Now premium "Discovery Call" (no free offer) -->
+    <section id="lead-form" class="py-20 bg-zinc-900">
+        <div class="max-w-2xl mx-auto px-6 text-center">
+            <h3 class="text-4xl font-semibold mb-4">Book Your Discovery Call</h3>
+            <p class="text-zinc-400 mb-8">Let’s discuss your goals and how our personalized NASM OPT coaching can help you reclaim your movement and rebuild strength.</p>
+            <form id="form" class="space-y-6" onsubmit="handleSubmit(event)">
+                <input type="text" placeholder="First Name" required class="w-full px-6 py-5 bg-zinc-800 border border-zinc-700 rounded-3xl text-lg focus:outline-none focus:border-emerald-500">
+                <input type="email" placeholder="Email Address" required class="w-full px-6 py-5 bg-zinc-800 border border-zinc-700 rounded-3xl text-lg focus:outline-none focus:border-emerald-500">
+                <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-600 py-6 text-xl font-semibold rounded-3xl transition-colors">Submit Request</button>
+            </form>
+            <p class="text-xs text-zinc-500 mt-6">We’ll reply within 24 hours with next steps.</p>
+        </div>
+    </section>
+
+    <!-- How Online Training Works + OPT Philosophy (unchanged) -->
+    <section id="how-it-works" class="py-24 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-5xl font-semibold mb-4">Our Training Philosophy</h3>
+                <p class="text-2xl text-zinc-400">NASM OPT Model — Stabilization → Strength → Power</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-zinc-900 rounded-3xl p-10">
+                    <div class="text-emerald-400 text-6xl font-bold mb-6">01</div>
+                    <h4 class="text-3xl font-semibold mb-4">Stabilization</h4>
+                    <p class="text-zinc-400">Correct posture, fix imbalances, and build a rock-solid foundation so you move without pain.</p>
+                </div>
+                <div class="bg-zinc-900 rounded-3xl p-10">
+                    <div class="text-emerald-400 text-6xl font-bold mb-6">02</div>
+                    <h4 class="text-3xl font-semibold mb-4">Strength</h4>
+                    <p class="text-zinc-400">Rebuild muscle, boost metabolism, and feel stronger in everyday life.</p>
+                </div>
+                <div class="bg-zinc-900 rounded-3xl p-10">
+                    <div class="text-emerald-400 text-6xl font-bold mb-6">03</div>
+                    <h4 class="text-3xl font-semibold mb-4">Power</h4>
+                    <p class="text-zinc-400">Develop explosive, functional movement so you stay active and confident for decades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials & Final CTA remain exactly the same as before (no free language) -->
+    <section class="py-24 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <h3 class="text-center text-5xl font-semibold mb-16">Real Results from Real People</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-zinc-800 rounded-3xl p-8">
+                    <p class="italic">"Lost 18 lbs and my lower back pain is gone. The OPT program actually fits my crazy schedule."</p>
+                    <div class="mt-8 flex items-center gap-4">
+                        <div class="w-12 h-12 bg-zinc-700 rounded-2xl"></div>
+                        <div>
+                            <div class="font-semibold">Sarah M., 42</div>
+                            <div class="text-sm text-emerald-400">Marketing Director • 6 weeks in</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-gradient-to-b from-zinc-950 to-black text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <h3 class="text-6xl font-bold mb-6">Ready to Reclaim Your Movement?</h3>
+            <button onclick="document.getElementById('lead-form').scrollIntoView({ behavior: 'smooth' })" 
+                    class="bg-emerald-500 hover:bg-emerald-600 px-12 py-6 text-2xl font-semibold rounded-3xl transition-colors">
+                Get Started Today →
+            </button>
+        </div>
+    </section>
+
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            alert("✅ Thank you! Your discovery call request has been received. We'll reply within 24 hours.");
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>
