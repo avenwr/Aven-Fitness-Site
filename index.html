@@ -10,7 +10,7 @@
         
         .hero-bg {
             background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('logo.png');
-            background-size: 80% auto;
+            background-size: 75% auto;
             background-position: center;
             background-repeat: no-repeat;
         }
@@ -18,17 +18,14 @@
 </head>
 <body class="bg-white text-zinc-900">
     
-    <!-- NAV (in white bar) -->
+    <!-- NAV -->
     <nav class="bg-white border-b border-zinc-200">
         <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-            
-            <!-- Logo -->
             <div class="flex items-center gap-3">
                 <img src="logo.png" alt="Aven Fitness Logo" class="h-14 w-auto">
             </div>
             
-            <!-- Navigation Links (centered) -->
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium absolute left-1/2 transform -translate-x-1/2">
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
                 <a href="#" class="hover:text-emerald-600">Home</a>
                 <a href="#coaching" class="hover:text-emerald-600">Coaching</a>
                 <a href="#pricing" class="hover:text-emerald-600">Pricing</a>
@@ -37,44 +34,34 @@
                 <a href="#terms" class="hover:text-emerald-600">Terms of Service</a>
             </div>
             
-            <!-- Get Started Button -->
-            <div>
-                <a href="#contact" class="px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold rounded-xl">Get Started</a>
-            </div>
-            
+            <a href="#contact" class="px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold rounded-xl">Get Started</a>
         </div>
     </nav>
 
-    <!-- HERO -->
-    <section class="hero-bg min-h-[100dvh] flex items-center justify-center text-white">
-        <div class="text-center px-6">
+    <!-- HERO (with logo background) -->
+    <section class="hero-bg py-24 text-white">
+        <div class="max-w-5xl mx-auto px-6 text-center">
             <h1 class="text-7xl md:text-8xl font-bold tracking-tighter leading-none mb-6">
                 Reclaim Your Movement.<br>Rebuild Your Strength.
             </h1>
-        </div>
-    </section>
-
-    <!-- THREE CENTERED BUTTONS -->
-    <section class="max-w-5xl mx-auto px-6 py-16">
-        <div class="flex flex-col md:flex-row justify-center gap-6">
             
-            <a href="#coaching" class="px-10 py-4 border-2 border-zinc-300 hover:border-emerald-600 rounded-full text-center font-semibold transition-all">
-                How Does Online Training Work?
-            </a>
-            
-            <a href="#pricing" class="px-10 py-4 border-2 border-zinc-300 hover:border-emerald-600 rounded-full text-center font-semibold transition-all">
-                Pricing
-            </a>
-            
-            <a href="#contact" class="px-10 py-4 border-2 border-emerald-600 bg-emerald-600 text-white hover:bg-emerald-700 rounded-full text-center font-semibold transition-all">
-                Get Started
-            </a>
-            
+            <!-- THREE BUTTONS (centered) -->
+            <div class="flex flex-col md:flex-row justify-center gap-4 mt-10">
+                <a href="#coaching" class="px-8 py-3 border-2 border-white hover:bg-white hover:text-zinc-900 rounded-full text-sm font-semibold transition-all">
+                    How Does Online Training Work?
+                </a>
+                <a href="#pricing" class="px-8 py-3 border-2 border-white hover:bg-white hover:text-zinc-900 rounded-full text-sm font-semibold transition-all">
+                    Pricing
+                </a>
+                <a href="#contact" class="px-8 py-3 border-2 border-emerald-400 bg-emerald-600 hover:bg-emerald-700 rounded-full text-sm font-semibold transition-all">
+                    Get Started
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- THREE IMAGES -->
-    <section class="max-w-7xl mx-auto px-6 pb-20">
+    <section class="max-w-7xl mx-auto px-6 py-12">
         <div class="grid md:grid-cols-3 gap-6">
             <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full rounded-2xl shadow-lg">
             <img src="https://images.unsplash.com/photo-1574680096145-5a5e2c7e1e3c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full rounded-2xl shadow-lg">
