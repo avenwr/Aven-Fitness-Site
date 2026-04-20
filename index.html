@@ -9,8 +9,8 @@
         body { font-family: 'Inter', system_ui, sans-serif; }
         
         .hero-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('logo.png');
-            background-size: 75% auto;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('logo.png');
+            background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
         }
@@ -38,9 +38,9 @@
         </div>
     </nav>
 
-    <!-- HERO -->
-    <section class="hero-bg py-20 text-white">
-        <div class="max-w-5xl mx-auto px-6 text-center">
+    <!-- HERO (Logo fills the entire background) -->
+    <section class="hero-bg min-h-[100dvh] flex items-center justify-center text-white">
+        <div class="text-center px-6">
             <h1 class="text-7xl md:text-8xl font-bold tracking-tighter leading-none mb-6">
                 Reclaim Your Movement.<br>Rebuild Your Strength.
             </h1>
@@ -50,43 +50,25 @@
     <!-- THREE BUTTONS + THREE IMAGES -->
     <section class="max-w-7xl mx-auto px-6 py-16">
         
-        <!-- Buttons Row -->
+        <!-- Buttons -->
         <div class="grid md:grid-cols-3 gap-6 mb-6">
-            
-            <!-- Button 1 -->
             <a href="#coaching" class="block px-8 py-4 border-2 border-zinc-300 hover:border-emerald-600 rounded-full text-center font-semibold transition-all">
                 How Does Online Training Work?
             </a>
-            
-            <!-- Button 2 -->
             <a href="#pricing" class="block px-8 py-4 border-2 border-zinc-300 hover:border-emerald-600 rounded-full text-center font-semibold transition-all">
                 Pricing
             </a>
-            
-            <!-- Button 3 -->
             <a href="#contact" class="block px-8 py-4 border-2 border-emerald-600 bg-emerald-600 text-white hover:bg-emerald-700 rounded-full text-center font-semibold transition-all">
                 Get Started
             </a>
-            
         </div>
         
-        <!-- Images Row -->
+        <!-- Images -->
         <div class="grid md:grid-cols-3 gap-6">
-            
-            <!-- Image 1 (under "How Does Online Training Work?") -->
-            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                 class="w-full rounded-2xl shadow-lg">
-            
-            <!-- Image 2 (under "Pricing") -->
-            <img src="https://images.unsplash.com/photo-1574680096145-5a5e2c7e1e3c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                 class="w-full rounded-2xl shadow-lg">
-            
-            <!-- Image 3 (under "Get Started") -->
-            <img src="https://images.unsplash.com/photo-1598971639058-fab3c3109a00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                 class="w-full rounded-2xl shadow-lg">
-            
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full rounded-2xl shadow-lg">
+            <img src="https://images.unsplash.com/photo-1574680096145-5a5e2c7e1e3c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full rounded-2xl shadow-lg">
+            <img src="https://images.unsplash.com/photo-1598971639058-fab3c3109a00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full rounded-2xl shadow-lg">
         </div>
-        
     </section>
 
     <!-- FINAL CTA -->
