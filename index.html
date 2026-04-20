@@ -18,14 +18,17 @@
 </head>
 <body class="bg-white text-zinc-900">
     
-    <!-- NAV -->
+    <!-- NAV (in white bar) -->
     <nav class="bg-white border-b border-zinc-200">
         <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            
+            <!-- Logo -->
             <div class="flex items-center gap-3">
                 <img src="logo.png" alt="Aven Fitness Logo" class="h-14 w-auto">
             </div>
             
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+            <!-- Navigation Links (centered) -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium absolute left-1/2 transform -translate-x-1/2">
                 <a href="#" class="hover:text-emerald-600">Home</a>
                 <a href="#coaching" class="hover:text-emerald-600">Coaching</a>
                 <a href="#pricing" class="hover:text-emerald-600">Pricing</a>
@@ -34,11 +37,15 @@
                 <a href="#terms" class="hover:text-emerald-600">Terms of Service</a>
             </div>
             
-            <a href="#contact" class="px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold rounded-xl">Get Started</a>
+            <!-- Get Started Button -->
+            <div>
+                <a href="#contact" class="px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold rounded-xl">Get Started</a>
+            </div>
+            
         </div>
     </nav>
 
-    <!-- HERO (Logo Background) -->
+    <!-- HERO -->
     <section class="hero-bg min-h-[100dvh] flex items-center justify-center text-white">
         <div class="text-center px-6">
             <h1 class="text-7xl md:text-8xl font-bold tracking-tighter leading-none mb-6">
@@ -47,19 +54,19 @@
         </div>
     </section>
 
-    <!-- THREE BUTTONS -->
+    <!-- THREE CENTERED BUTTONS -->
     <section class="max-w-5xl mx-auto px-6 py-16">
-        <div class="grid md:grid-cols-3 gap-6">
+        <div class="flex flex-col md:flex-row justify-center gap-6">
             
-            <a href="#coaching" class="block px-8 py-4 border-2 border-zinc-300 hover:border-emerald-600 rounded-full text-center font-semibold transition-all">
+            <a href="#coaching" class="px-10 py-4 border-2 border-zinc-300 hover:border-emerald-600 rounded-full text-center font-semibold transition-all">
                 How Does Online Training Work?
             </a>
             
-            <a href="#pricing" class="block px-8 py-4 border-2 border-zinc-300 hover:border-emerald-600 rounded-full text-center font-semibold transition-all">
+            <a href="#pricing" class="px-10 py-4 border-2 border-zinc-300 hover:border-emerald-600 rounded-full text-center font-semibold transition-all">
                 Pricing
             </a>
             
-            <a href="#contact" class="block px-8 py-4 border-2 border-emerald-600 bg-emerald-600 text-white hover:bg-emerald-700 rounded-full text-center font-semibold transition-all">
+            <a href="#contact" class="px-10 py-4 border-2 border-emerald-600 bg-emerald-600 text-white hover:bg-emerald-700 rounded-full text-center font-semibold transition-all">
                 Get Started
             </a>
             
