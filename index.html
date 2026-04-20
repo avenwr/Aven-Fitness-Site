@@ -8,8 +8,8 @@
     <style>
         body { font-family: 'Inter', system_ui, sans-serif; }
         
-        .hero-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('logo.png');
+        .dark-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('logo.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -38,36 +38,35 @@
         </div>
     </nav>
 
-    <!-- HERO (Logo fills the entire background) -->
-    <section class="hero-bg min-h-[100dvh] flex items-center justify-center text-white">
-        <div class="text-center px-6">
-            <h1 class="text-7xl md:text-8xl font-bold tracking-tighter leading-none mb-6">
+    <!-- HERO + BUTTONS + IMAGES (All with logo background) -->
+    <section class="dark-section py-20 text-white">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            
+            <!-- Headline -->
+            <h1 class="text-7xl md:text-8xl font-bold tracking-tighter leading-none mb-12">
                 Reclaim Your Movement.<br>Rebuild Your Strength.
             </h1>
-        </div>
-    </section>
-
-    <!-- THREE BUTTONS + THREE IMAGES -->
-    <section class="max-w-7xl mx-auto px-6 py-16">
-        
-        <!-- Buttons -->
-        <div class="grid md:grid-cols-3 gap-6 mb-6">
-            <a href="#coaching" class="block px-8 py-4 border-2 border-zinc-300 hover:border-emerald-600 rounded-full text-center font-semibold transition-all">
-                How Does Online Training Work?
-            </a>
-            <a href="#pricing" class="block px-8 py-4 border-2 border-zinc-300 hover:border-emerald-600 rounded-full text-center font-semibold transition-all">
-                Pricing
-            </a>
-            <a href="#contact" class="block px-8 py-4 border-2 border-emerald-600 bg-emerald-600 text-white hover:bg-emerald-700 rounded-full text-center font-semibold transition-all">
-                Get Started
-            </a>
-        </div>
-        
-        <!-- Images -->
-        <div class="grid md:grid-cols-3 gap-6">
-            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full rounded-2xl shadow-lg">
-            <img src="https://images.unsplash.com/photo-1574680096145-5a5e2c7e1e3c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full rounded-2xl shadow-lg">
-            <img src="https://images.unsplash.com/photo-1598971639058-fab3c3109a00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full rounded-2xl shadow-lg">
+            
+            <!-- THREE BUTTONS -->
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <a href="#coaching" class="block px-8 py-4 border-2 border-white hover:bg-white hover:text-zinc-900 rounded-full text-center font-semibold transition-all">
+                    How Does Online Training Work?
+                </a>
+                <a href="#pricing" class="block px-8 py-4 border-2 border-white hover:bg-white hover:text-zinc-900 rounded-full text-center font-semibold transition-all">
+                    Pricing
+                </a>
+                <a href="#contact" class="block px-8 py-4 border-2 border-emerald-400 bg-emerald-600 hover:bg-emerald-700 rounded-full text-center font-semibold transition-all">
+                    Get Started
+                </a>
+            </div>
+            
+            <!-- THREE IMAGES -->
+            <div class="grid md:grid-cols-3 gap-6">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full rounded-2xl shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1574680096145-5a5e2c7e1e3c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full rounded-2xl shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1598971639058-fab3c3109a00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full rounded-2xl shadow-2xl">
+            </div>
+            
         </div>
     </section>
 
