@@ -5,115 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aven Fitness • Personalized NASM OPT Coaching</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         body { font-family: 'Inter', system_ui, sans-serif; }
-        .nav-link { transition: color 0.2s ease; }
-        .nav-link:hover { color: #22c55e; }
-        
         .hero-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('logo.png');
-            background-size: 55% auto;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('logo.png');
+            background-size: 50% auto;
             background-position: center;
             background-repeat: no-repeat;
-            background-attachment: fixed;
         }
-        
-        .section-header { font-size: 2.75rem; line-height: 1.1; font-weight: 700; }
     </style>
 </head>
-<body class="bg-zinc-950 text-zinc-900">
+<body class="bg-zinc-950 text-white">
     
     <!-- NAV -->
-    <nav class="sticky top-0 z-50 bg-white border-b border-zinc-200">
+    <nav class="bg-white border-b border-zinc-200">
         <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <img src="logo.png" alt="Aven Fitness Logo" class="h-16 w-auto">
+                <img src="logo.png" alt="Aven Fitness Logo" class="h-14 w-auto">
             </div>
             
-            <div class="hidden md:flex items-center gap-9 text-sm font-medium">
-                <a href="#coaching" class="nav-link">Coaching</a>
-                <a href="#pricing" class="nav-link">Pricing</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <a href="#terms" class="nav-link">Terms of Service</a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-700">
+                <a href="#coaching" class="hover:text-emerald-600">Coaching</a>
+                <a href="#pricing" class="hover:text-emerald-600">Pricing</a>
+                <a href="#about" class="hover:text-emerald-600">About</a>
+                <a href="#contact" class="hover:text-emerald-600">Contact</a>
             </div>
             
-            <div>
-                <a href="#contact" class="px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold rounded-xl transition-colors">Get Started</a>
-            </div>
+            <a href="#contact" class="px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold rounded-xl">Get Started</a>
         </div>
     </nav>
 
-    <!-- HERO (Logo Background) -->
-    <section class="hero-bg min-h-[100dvh] flex items-center relative text-white">
-        <div class="max-w-5xl mx-auto px-6 pt-12 pb-24 text-center">
-            <div class="max-w-3xl mx-auto">
-                <h1 class="text-7xl md:text-8xl font-bold tracking-tighter leading-none mb-6">
-                    Reclaim Your Movement.<br>Rebuild Your Strength.
-                </h1>
-                
-                <p class="max-w-2xl mx-auto text-2xl mb-10">
-                    Personalized NASM OPT online coaching for busy professionals 30–50.<br>
-                    Corrective exercise • Functional strength • Real-life results.
-                </p>
-                
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#contact" class="inline-flex items-center justify-center px-10 py-4 bg-white text-zinc-950 font-semibold text-lg rounded-2xl hover:bg-zinc-100 transition-all">
-                        Get Started Today
-                    </a>
-                    <a href="#coaching" class="inline-flex items-center justify-center px-8 py-4 border border-white/30 hover:bg-white/10 font-semibold text-lg rounded-2xl transition-all">
-                        How It Works
-                    </a>
-                </div>
-            </div>
+    <!-- HERO -->
+    <section class="hero-bg min-h-[90dvh] flex items-center justify-center text-white">
+        <div class="text-center px-6">
+            <h1 class="text-7xl md:text-8xl font-bold tracking-tighter leading-none mb-6">
+                Reclaim Your Movement.<br>Rebuild Your Strength.
+            </h1>
+            <p class="text-2xl text-zinc-300 max-w-2xl mx-auto">
+                Personalized NASM OPT online coaching for busy professionals 30–50.
+            </p>
         </div>
     </section>
 
-    <!-- COACHING PROCESS -->
-    <section id="coaching" class="max-w-5xl mx-auto px-6 py-24">
-        <div class="text-center mb-16">
-            <h2 class="section-header">What Is Online Personal Training?</h2>
-            <p class="mt-6 text-xl text-zinc-600 max-w-3xl mx-auto">Online personal training is a personalized coaching experience delivered through a digital platform instead of meeting in a gym. You receive a custom training plan designed specifically for your goals, fitness level, and available equipment — and you stay connected with your coach through regular check-ins, progress tracking, and exercise feedback.</p>
+    <!-- THREE CARDS -->
+    <section class="max-w-6xl mx-auto px-6 py-20">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold">How Can We Help You?</h2>
         </div>
         
-        <div class="max-w-3xl mx-auto space-y-16">
-            <!-- Step 1 -->
-            <div>
-                <div class="text-emerald-600 font-bold text-6xl mb-4">1.</div>
-                <h3 class="text-4xl font-bold mb-4">Fitness Assessment</h3>
-                <p class="text-lg text-zinc-600">Every client begins with a detailed online intake and movement assessment. This helps identify mobility restrictions, muscular imbalances, and training history so your program can be built around your body and goals.</p>
-            </div>
+        <div class="grid md:grid-cols-3 gap-8">
             
-            <!-- Step 2 -->
-            <div>
-                <div class="text-emerald-600 font-bold text-6xl mb-4">2.</div>
-                <h3 class="text-4xl font-bold mb-4">Customized Training Plan</h3>
-                <p class="text-lg text-zinc-600">Based on your assessment, you receive a structured training program designed specifically for you. Your plan includes:</p>
-                <ul class="mt-4 space-y-2 text-lg text-zinc-600 list-disc pl-6">
-                    <li>Step-by-step workouts</li>
-                    <li>Exercise video demonstrations</li>
-                    <li>Sets, reps, tempo, and rest guidelines</li>
-                    <li>Progressive programming to ensure continued improvement</li>
-                </ul>
-            </div>
+            <!-- Card 1: Coaching -->
+            <a href="#coaching" class="group block bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     class="w-full h-72 object-cover group-hover:scale-105 transition-transform">
+                <div class="p-8">
+                    <h3 class="text-3xl font-bold text-zinc-900 mb-3">Coaching</h3>
+                    <p class="text-zinc-600">Personalized 1:1 or group coaching with custom NASM OPT programming.</p>
+                    <div class="mt-6 text-emerald-600 font-semibold flex items-center gap-2">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </a>
             
-            <!-- Step 3-5 -->
-            <div class="grid md:grid-cols-3 gap-8">
+            <!-- Card 2: Pricing -->
+            <a href="#pricing" class="group block bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all">
+                <img src="https://images.unsplash.com/photo-1574680096145-5a5e2c7e1e3c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     class="w-full h-72 object-cover group-hover:scale-105 transition-transform">
+                <div class="p-8">
+                    <h3 class="text-3xl font-bold text-zinc-900 mb-3">Pricing</h3>
+                    <p class="text-zinc-600">Simple, transparent pricing. Only $199/month.</p>
+                    <div class="mt-6 text-emerald-600 font-semibold flex items-center gap-2">
+                        View Pricing <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Card 3: How It Works -->
+            <a href="#how" class="group block bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all">
+                <img src="https://images.unsplash.com/photo-1598971639058-fab3c3109a00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     class="w-full h-72 object-cover group-hover:scale-105 transition-transform">
+                <div class="p-8">
+                    <h3 class="text-3xl font-bold text-zinc-900 mb-3">How It Works</h3>
+                    <p class="text-zinc-600">Simple 5-step process from assessment to results.</p>
+                    <div class="mt-6 text-emerald-600 font-semibold flex items-center gap-2">
+                        See How It Works <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+    </section>
+
+    <!-- COACHING DETAILS -->
+    <section id="coaching" class="max-w-5xl mx-auto px-6 py-20 border-t border-zinc-800">
+        <h2 class="text-5xl font-bold mb-12">Coaching</h2>
+        
+        <div class="prose max-w-none text-lg text-zinc-600">
+            <p>Online personal training is a personalized coaching experience delivered through a digital platform. You receive a custom training plan designed specifically for your goals, fitness level, and available equipment — and you stay connected with your coach through regular check-ins, progress tracking, and exercise feedback.</p>
+            
+            <h3 class="text-3xl font-bold mt-12 mb-6">How It Works</h3>
+            
+            <div class="space-y-10">
                 <div>
-                    <div class="text-emerald-600 font-bold text-5xl mb-4">3.</div>
-                    <h3 class="text-3xl font-bold mb-4">Train on Your Schedule</h3>
-                    <p class="text-zinc-600">Workouts are delivered through an easy-to-use training app so you can train whenever it fits your schedule. Whether you're at home or in the gym, your program travels with you.</p>
+                    <div class="font-bold text-2xl mb-2">1. Fitness Assessment</div>
+                    <p>Every client begins with a detailed online intake and movement assessment.</p>
                 </div>
                 <div>
-                    <div class="text-emerald-600 font-bold text-5xl mb-4">4.</div>
-                    <h3 class="text-3xl font-bold mb-4">Weekly Coaching & Feedback</h3>
-                    <p class="text-zinc-600">Each week you'll check in with your coach to review your progress, ask questions, and receive feedback on exercise technique. Clients can upload videos of their exercises to receive coaching and corrections.</p>
+                    <div class="font-bold text-2xl mb-2">2. Customized Training Plan</div>
+                    <p>You receive a structured program with step-by-step workouts, video demonstrations, and progressive programming.</p>
                 </div>
                 <div>
-                    <div class="text-emerald-600 font-bold text-5xl mb-4">5.</div>
-                    <h3 class="text-3xl font-bold mb-4">Program Updates</h3>
-                    <p class="text-zinc-600">Your training plan evolves as you improve. Programs are adjusted regularly to keep you progressing while reducing risk of injury.</p>
+                    <div class="font-bold text-2xl mb-2">3. Train on Your Schedule</div>
+                    <p>Workouts are delivered through an easy-to-use app so you can train whenever it fits your schedule.</p>
+                </div>
+                <div>
+                    <div class="font-bold text-2xl mb-2">4. Weekly Coaching & Feedback</div>
+                    <p>Each week you'll check in with your coach for progress reviews and technique feedback.</p>
+                </div>
+                <div>
+                    <div class="font-bold text-2xl mb-2">5. Program Updates</div>
+                    <p>Your plan evolves as you improve. Programs are adjusted regularly to keep you progressing safely.</p>
                 </div>
             </div>
         </div>
@@ -121,41 +133,38 @@
 
     <!-- PRICING -->
     <section id="pricing" class="bg-zinc-900 py-20 text-white">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-5xl font-bold tracking-tight mb-6">Simple, Transparent Pricing</h2>
-            <p class="text-xl text-zinc-400 mb-12">No hidden fees. Cancel anytime.</p>
+        <div class="max-w-md mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold mb-6">Pricing</h2>
+            <div class="text-7xl font-bold mb-2">$199</div>
+            <div class="text-2xl text-zinc-400 mb-10">per month</div>
             
-            <div class="max-w-md mx-auto bg-zinc-950 border border-zinc-700 rounded-3xl p-12">
-                <div class="text-6xl font-bold">$199<span class="text-3xl font-normal text-zinc-400">/month</span></div>
-                <div class="mt-8 space-y-4 text-left">
-                    <div class="flex items-start gap-3"><i class="fa-solid fa-check text-emerald-400 mt-1.5"></i> Weekly 1:1 or group coaching calls</div>
-                    <div class="flex items-start gap-3"><i class="fa-solid fa-check text-emerald-400 mt-1.5"></i> Custom NASM OPT programming</div>
-                    <div class="flex items-start gap-3"><i class="fa-solid fa-check text-emerald-400 mt-1.5"></i> Direct messaging access</div>
-                    <div class="flex items-start gap-3"><i class="fa-solid fa-check text-emerald-400 mt-1.5"></i> Form check videos</div>
-                    <div class="flex items-start gap-3"><i class="fa-solid fa-check text-emerald-400 mt-1.5"></i> Monthly progress reviews</div>
-                </div>
-                <a href="#contact" class="mt-10 block text-center bg-emerald-600 hover:bg-emerald-500 font-semibold py-4 rounded-2xl">Get Started</a>
+            <div class="bg-zinc-950 border border-zinc-700 rounded-3xl p-10 text-left">
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> Weekly coaching calls</li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> Custom NASM OPT programming</li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> Direct messaging access</li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> Form check videos</li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> Monthly progress reviews</li>
+                </ul>
             </div>
+            
+            <a href="#contact" class="mt-10 inline-block px-14 py-4 bg-emerald-600 hover:bg-emerald-500 text-lg font-semibold rounded-2xl">Get Started</a>
         </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="max-w-5xl mx-auto px-6 py-24">
-        <div class="max-w-3xl">
-            <h2 class="text-6xl font-bold tracking-tight mb-8">About Aven Fitness</h2>
-            
-            <div class="space-y-8 text-lg text-zinc-600">
-                <p>AvenFitness was created to provide structured, personalized fitness coaching for people who want real results without confusion, guesswork, or generic workout plans.</p>
-                
-                <p>Many people struggle with fitness not because they lack effort, but because they lack a clear plan. AvenFitness was built to solve that problem by providing individualized training programs designed around each client's goals, movement patterns, and experience level.</p>
-                
-                <p>Every program is developed using evidence-based training principles, including the NASM Optimum Performance Training (OPT™) model and corrective exercise strategies. This approach focuses on building a strong foundation of movement quality, strength, and long-term physical health.</p>
-            </div>
-            
-            <div class="mt-16">
-                <h3 class="text-4xl font-bold mb-8">Our Approach</h3>
-                
-                <div class="space-y-10">
-                    <div>
-                        <div class="font-bold text-xl mb-2">Individualization</div>
-                        <
+    <!-- FINAL CTA -->
+    <section id="contact" class="max-w-xl mx-auto px-6 py-24 text-center">
+        <h2 class="text-5xl font-bold tracking-tight">Ready to get started?</h2>
+        <p class="mt-4 text-xl text-zinc-400">Book a free discovery call today.</p>
+        
+        <div class="mt-10">
+            <a href="#contact" class="inline-flex items-center justify-center px-14 py-4 bg-emerald-600 hover:bg-emerald-500 text-lg font-semibold rounded-2xl">Book Your Free Discovery Call</a>
+        </div>
+    </section>
+
+    <footer class="bg-zinc-950 border-t border-zinc-800 py-12 text-center text-sm text-zinc-500">
+        © 2026 Aven Fitness. All rights reserved.
+    </footer>
+
+</body>
+</html>
