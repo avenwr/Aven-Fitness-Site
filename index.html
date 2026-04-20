@@ -7,143 +7,67 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { font-family: 'Inter', system_ui, sans-serif; }
-        .hero-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('logo.png');
-            background-size: 55% auto;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
     </style>
 </head>
-<body class="bg-zinc-100 text-zinc-900">
+<body class="bg-white text-zinc-900">
     
     <!-- NAV -->
-    <nav class="bg-white border-b border-zinc-200 sticky top-0 z-50">
+    <nav class="border-b border-zinc-200">
         <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <img src="logo.png" alt="Aven Fitness Logo" class="h-20 w-auto">
+                <img src="logo.png" alt="Aven Fitness Logo" class="h-14 w-auto">
             </div>
             
             <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#" class="hover:text-emerald-600">Home</a>
                 <a href="#coaching" class="hover:text-emerald-600">Coaching</a>
-                <a href="#how" class="hover:text-emerald-600">How It Works</a>
+                <a href="#pricing" class="hover:text-emerald-600">Pricing</a>
                 <a href="#about" class="hover:text-emerald-600">About</a>
                 <a href="#contact" class="hover:text-emerald-600">Contact</a>
+                <a href="#terms" class="hover:text-emerald-600">Terms of Service</a>
             </div>
             
-            <div class="flex items-center gap-4">
-                <a href="#" class="px-5 py-2.5 text-sm font-semibold hover:bg-zinc-100 rounded-xl transition-colors">Home</a>
-                <a href="#contact" class="px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold rounded-xl transition-colors">Get Started</a>
-            </div>
+            <a href="#contact" class="px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold rounded-xl">Get Started</a>
         </div>
     </nav>
 
     <!-- HERO -->
-    <section class="hero-bg min-h-[90dvh] flex items-center justify-center text-white">
-        <div class="text-center px-6">
+    <section class="bg-zinc-900 text-white py-20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
             <h1 class="text-7xl md:text-8xl font-bold tracking-tighter leading-none mb-6">
                 Reclaim Your Movement.<br>Rebuild Your Strength.
             </h1>
-            <p class="text-2xl max-w-2xl mx-auto">
-                Personalized NASM OPT online coaching for busy professionals 30–50.
-            </p>
         </div>
     </section>
 
-    <!-- TWO CARDS -->
-    <section class="max-w-6xl mx-auto px-6 py-20">
-        <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold">How Can We Help You?</h2>
-        </div>
-        
-        <div class="grid md:grid-cols-2 gap-8">
+    <!-- THREE BUTTONS + IMAGES -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <div class="grid md:grid-cols-3 gap-6 mb-16">
             
-            <!-- Coaching Card -->
-            <a href="#coaching" class="group block bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all">
-                <img src="coaching.jpg" class="w-full h-80 object-cover group-hover:scale-105 transition-transform">
-                <div class="p-8">
-                    <h3 class="text-3xl font-bold mb-3">Coaching</h3>
-                    <p class="text-zinc-600">Personalized 1:1 or group coaching with custom NASM OPT programming.</p>
-                    <div class="mt-6 text-emerald-600 font-semibold flex items-center gap-2">
-                        Learn More <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                </div>
+            <!-- Button 1 -->
+            <a href="#how" class="block px-8 py-4 border-2 border-zinc-300 hover:border-emerald-600 rounded-full text-center font-semibold transition-all">
+                How Does Online Training Work?
             </a>
             
-            <!-- How It Works Card -->
-            <a href="#how" class="group block bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all">
-                <img src="how-it-works.jpg" class="w-full h-80 object-cover group-hover:scale-105 transition-transform">
-                <div class="p-8">
-                    <h3 class="text-3xl font-bold mb-3">How It Works</h3>
-                    <p class="text-zinc-600">Simple 5-step process from assessment to lasting results.</p>
-                    <div class="mt-6 text-emerald-600 font-semibold flex items-center gap-2">
-                        See How It Works <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                </div>
+            <!-- Button 2 -->
+            <a href="#pricing" class="block px-8 py-4 border-2 border-zinc-300 hover:border-emerald-600 rounded-full text-center font-semibold transition-all">
+                Pricing
+            </a>
+            
+            <!-- Button 3 -->
+            <a href="#contact" class="block px-8 py-4 border-2 border-emerald-600 bg-emerald-600 text-white hover:bg-emerald-700 rounded-full text-center font-semibold transition-all">
+                Get Started
             </a>
             
         </div>
-    </section>
-
-    <!-- COACHING SECTION -->
-    <section id="coaching" class="max-w-5xl mx-auto px-6 py-20 border-t border-zinc-200">
-        <h2 class="text-5xl font-bold mb-12">Coaching</h2>
         
-        <div class="prose max-w-none text-lg text-zinc-600">
-            <p>Online personal training is a personalized coaching experience delivered through a digital platform. You receive a custom training plan designed specifically for your goals, fitness level, and available equipment — and you stay connected with your coach through regular check-ins, progress tracking, and exercise feedback.</p>
-        </div>
-    </section>
-
-    <!-- HOW IT WORKS -->
-    <section id="how" class="bg-zinc-900 py-20 text-white">
-        <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-5xl font-bold mb-12 text-center">How It Works</h2>
+        <!-- THREE IMAGES -->
+        <div class="grid md:grid-cols-3 gap-6">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                 class="w-full rounded-2xl shadow-lg">
             
-            <div class="grid md:grid-cols-5 gap-8">
-                <div>
-                    <div class="font-bold text-6xl text-emerald-400 mb-4">1</div>
-                    <div class="font-bold text-xl mb-2">Fitness Assessment</div>
-                    <p class="text-zinc-400">Detailed online intake and movement assessment.</p>
-                </div>
-                <div>
-                    <div class="font-bold text-6xl text-emerald-400 mb-4">2</div>
-                    <div class="font-bold text-xl mb-2">Customized Training Plan</div>
-                    <p class="text-zinc-400">Structured program with video demonstrations.</p>
-                </div>
-                <div>
-                    <div class="font-bold text-6xl text-emerald-400 mb-4">3</div>
-                    <div class="font-bold text-xl mb-2">Train on Your Schedule</div>
-                    <p class="text-zinc-400">Workouts delivered through an easy-to-use app.</p>
-                </div>
-                <div>
-                    <div class="font-bold text-6xl text-emerald-400 mb-4">4</div>
-                    <div class="font-bold text-xl mb-2">Weekly Coaching & Feedback</div>
-                    <p class="text-zinc-400">Regular check-ins and technique corrections.</p>
-                </div>
-                <div>
-                    <div class="font-bold text-6xl text-emerald-400 mb-4">5</div>
-                    <div class="font-bold text-xl mb-2">Program Updates</div>
-                    <p class="text-zinc-400">Plans adjusted as you progress.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FINAL CTA -->
-    <section id="contact" class="max-w-xl mx-auto px-6 py-24 text-center">
-        <h2 class="text-5xl font-bold tracking-tight">Ready to move better and feel stronger?</h2>
-        <p class="mt-4 text-xl text-zinc-600">Book a free discovery call. No pressure, no sales pitch.</p>
-        
-        <div class="mt-10">
-            <a href="#contact" class="inline-flex items-center justify-center px-14 py-4 bg-emerald-600 hover:bg-emerald-500 text-lg font-semibold rounded-2xl transition-all">
-                Book Your Free Discovery Call
-            </a>
-        </div>
-    </section>
-
-    <footer class="bg-white border-t border-zinc-200 py-12 text-center text-sm text-zinc-500">
-        © 2026 Aven Fitness. All rights reserved.
-    </footer>
-
-</body>
-</html>
+            <img src="https://images.unsplash.com/photo-1574680096145-5a5e2c7e1e3c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                 class="w-full rounded-2xl shadow-lg">
+            
+            <img src="https://images.unsplash.com/photo-1598971639058-fab3c3109a00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                 class
